@@ -1,7 +1,7 @@
-package desafio.magalu.scheduling;
+package desafio.magalu.scheduling.domain;
 
-import desafio.magalu.scheduling.enums.SchedulingStatus;
-import desafio.magalu.scheduling.enums.SchedulingType;
+import desafio.magalu.scheduling.domain.enums.SchedulingStatus;
+import desafio.magalu.scheduling.domain.enums.SchedulingType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -24,7 +24,7 @@ public class Scheduling {
     private String destination;
 
     @Column(nullable = false)
-    private String mesage;
+    private String message;
 
     @Enumerated(EnumType.STRING)
     private SchedulingType type;

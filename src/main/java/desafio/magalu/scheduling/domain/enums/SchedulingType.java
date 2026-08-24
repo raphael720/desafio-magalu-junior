@@ -1,4 +1,4 @@
-package desafio.magalu.scheduling.enums;
+package desafio.magalu.scheduling.domain.enums;
 
 public enum SchedulingType {
     EMAIL,

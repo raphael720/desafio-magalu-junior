@@ -1,4 +1,4 @@
-package desafio.magalu.scheduling;
+package desafio.magalu.scheduling.application;
 
 import org.springframework.stereotype.Service;
 
