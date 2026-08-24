@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: magalu
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/magaludb
+    username: magalu
+    password: magalu123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
