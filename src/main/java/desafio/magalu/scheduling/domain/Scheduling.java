@@ -3,7 +3,6 @@ package desafio.magalu.scheduling.domain;
 import desafio.magalu.scheduling.domain.enums.SchedulingStatus;
 import desafio.magalu.scheduling.domain.enums.SchedulingType;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,7 +12,6 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "Scheduling")
 @Getter @Setter
-@AllArgsConstructor
 @NoArgsConstructor
 public class Scheduling {
     @Id
@@ -33,5 +31,12 @@ public class Scheduling {
     private SchedulingStatus status;
 
     @Column(nullable = false)
-    private LocalDateTime SendingDate;
+    private LocalDateTime sendingDate;
+
+    public Scheduling(String message, String destination, SchedulingType type, LocalDateTime sendingDate) {
+        this.destination = destination;
+        this.message = message;
+        this.type = type;
+        this.sendingDate = sendingDate;
+    }
 }
